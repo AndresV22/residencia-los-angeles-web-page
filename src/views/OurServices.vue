@@ -4,11 +4,7 @@
     </section>
 
     <section>
-        <Hero></Hero>
-    </section>
-
-    <section>
-        <Testimonials></Testimonials>
+        <Features></Features>
     </section>
 
     <section>
@@ -18,6 +14,6 @@
 <script setup>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-import Hero from '@/components/Hero.vue'
+import Features from '@/components/Features.vue'
 import Testimonials from '@/components/Testimonials.vue'
 </script>
