@@ -72,31 +72,31 @@
                     <div>
                     <label for="firstName" class="block text-sm font-semibold leading-6 text-gray-900">Nombre</label>
                     <div class="mt-2.5">
-                        <input type="text" name="firstName" id="firstName" autocomplete="given-name" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-laGreenLight sm:text-sm sm:leading-6" />
+                        <input required v-model="form.firstName" type="text" name="firstName" id="firstName" autocomplete="given-name" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-laGreenLight sm:text-sm sm:leading-6" />
                     </div>
                     </div>
                     <div>
                     <label for="lastName" class="block text-sm font-semibold leading-6 text-gray-900">Apellido</label>
                     <div class="mt-2.5">
-                        <input type="text" name="lastName" id="lastName" autocomplete="family-name" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-laGreenLight sm:text-sm sm:leading-6" />
+                        <input type="text" v-model="form.lastName" name="lastName" id="lastName" autocomplete="family-name" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-laGreenLight sm:text-sm sm:leading-6" />
                     </div>
                     </div>
                     <div class="sm:col-span-2">
                     <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
                     <div class="mt-2.5">
-                        <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-laGreenLight sm:text-sm sm:leading-6" />
+                        <input required v-model="form.email" type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-laGreenLight sm:text-sm sm:leading-6" />
                     </div>
                     </div>
                     <div class="sm:col-span-2">
                     <label for="phone" class="block text-sm font-semibold leading-6 text-gray-900">N° celular</label>
                     <div class="mt-2.5">
-                        <input type="tel" name="phone" id="phone" autocomplete="tel" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-laGreenLight sm:text-sm sm:leading-6" />
+                        <input type="tel" v-model="form.phone" name="phone" id="phone" autocomplete="tel" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-laGreenLight sm:text-sm sm:leading-6" />
                     </div>
                     </div>
                     <div class="sm:col-span-2">
                     <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Mensaje</label>
                     <div class="mt-2.5">
-                        <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-laGreenLight sm:text-sm sm:leading-6" />
+                        <textarea required v-model="form.message" name="message" id="message" rows="4" class="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-laGreenLight sm:text-sm sm:leading-6" />
                     </div>
                     </div>
                 </div>
@@ -151,17 +151,23 @@
             })
 
             const onSubmit = async (e) => {
-                try {
-                    await emailjs.sendForm('service_nz0zzdr', 'template_3xmbafu', e.target,
-                    '59QH7487ZAcWXO0r5')
-                    console.log("Enviado.")
-                    form.firstName = ''
-                    form.lastName = ''
-                    form.phone = ''
-                    form.message = ''
-                    form.email = ''
-                } catch (error) {
-                    console.log({ error })
+                if(form.email != '' && form.firstName != '') {
+                    console.log("Enviando...")
+                    try {
+                        await emailjs.sendForm('service_nz0zzdr', 'template_3xmbafu', e.target,
+                        '59QH7487ZAcWXO0r5')
+                        console.log("Enviado.")
+                        form.firstName = ''
+                        form.lastName = ''
+                        form.phone = ''
+                        form.message = ''
+                        form.email = ''
+                    } catch (error) {
+                        console.log({ error })
+                    }
+                } else {
+                    console.log("Faltan datos.")
+                    return
                 }
             }
 
