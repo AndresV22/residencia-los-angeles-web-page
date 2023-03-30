@@ -27,7 +27,7 @@
             <span class="sr-only">Residencia Los Ángeles</span>
             <img class="h-8 w-auto" src="@/assets/green_logo.png" alt="" />
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-laBlue" @click="mobileMenuOpen = false">
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
             <span class="sr-only">Cerrar menú</span>
             <XMarkIcon class="h-6 w-6" aria-hidden="true" />
           </button>
@@ -35,7 +35,7 @@
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" class="hover:rounded-xl transition-all duration-700 cursor-pointer -mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-laBlue hover:bg-laYellow">{{ item.name }}</a>
+              <a v-for="item in navigation" :key="item.name" :href="item.href" class="hover:rounded-xl transition-all duration-700 cursor-pointer -mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-laYellow">{{ item.name }}</a>
             </div>
             <div class="py-6">
             </div>

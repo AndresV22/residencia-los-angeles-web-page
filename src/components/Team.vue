@@ -29,11 +29,60 @@
 <script setup>
 const people = [
   {
-    name: 'Erika Roa Eyzaguirre',
+    name: 'Erika Roa',
     role: 'Directora',
     imageUrl:
       'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
     linkedinUrl: 'https://www.linkedin.com/in/erika-roa-eyzaguirre-11523b18/',
+  },
+  {
+    name: 'Varinia Salazar',
+    role: 'Peluquera',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    linkedinUrl: '',
+  },
+  {
+    name: 'Nubia Fuentes',
+    role: 'Asistente de día',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    linkedinUrl: '',
+  },
+  {
+    name: 'Catalina Torres',
+    role: 'Kinesióloga',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    linkedinUrl: '',
+  },
+  {
+    name: 'Valeria Zúñiga',
+    role: 'Talleres recreativos',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    linkedinUrl: '',
+  },
+  {
+    name: 'Paulina Villalobos',
+    role: 'Nutricionista',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    linkedinUrl: '',
+  },
+  {
+    name: 'Jeannette Guajardo',
+    role: 'Pödología',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    linkedinUrl: '',
+  },
+  {
+    name: 'Katherine Acuña',
+    role: 'Fonoaudiología',
+    imageUrl:
+      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    linkedinUrl: '',
   },
 ]
 </script>
