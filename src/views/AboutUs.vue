@@ -6,11 +6,7 @@
     <section>
         <About></About>
     </section>
-
-    <section>
-        <Features></Features>
-    </section>
-
+    
     <section>
         <CallToAction></CallToAction>
     </section>

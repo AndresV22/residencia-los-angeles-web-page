@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
       <div class="mx-auto max-w-2xl">
         <h2 class="text-3xl font-bold tracking-tight text-laBlue sm:text-4xl">¡Conoce a nuestro equipo!</h2>
-        <p class="mt-4 text-lg leading-8 text-laBlue">Tenemos a los mejores profesionales, listos para atender las necesidades de nuestros abuelitos.</p>
+        <p class="mt-4 text-lg leading-8 text-laBlue">Tenemos a las mejores profesionales, listas para atender las necesidades de nuestros abuelitos.</p>
       </div>
       <ul role="list" class="motion-safe:animate-fadeOut mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <li v-for="person in people" :key="person.name">
@@ -27,61 +27,62 @@
 </template>
 
 <script setup>
+import erika from '@/assets/erika.jpeg'
+import varinia from '@/assets/varinia.jpeg'
+import nubia from '@/assets/nubia.jpeg'
+import catalina from '@/assets/catalina.jpeg'
+import vale from '@/assets/vale.jpeg'
+import paulina from '@/assets/paulina.jpeg'
+import jeannett from '@/assets/jeannette.jpeg'
+import katherine from '@/assets/katherine.jpeg'
+
 const people = [
   {
     name: 'Erika Roa',
     role: 'Directora',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: erika,
     linkedinUrl: 'https://www.linkedin.com/in/erika-roa-eyzaguirre-11523b18/',
-  },
-  {
-    name: 'Varinia Salazar',
-    role: 'Peluquera',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    linkedinUrl: '',
-  },
-  {
-    name: 'Nubia Fuentes',
-    role: 'Asistente de día',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    linkedinUrl: '',
-  },
-  {
-    name: 'Catalina Torres',
-    role: 'Kinesióloga',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    linkedinUrl: '',
   },
   {
     name: 'Valeria Zúñiga',
     role: 'Talleres recreativos',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: vale,
     linkedinUrl: '',
   },
   {
     name: 'Paulina Villalobos',
     role: 'Nutricionista',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: paulina,
+    linkedinUrl: '',
+  },
+  {
+    name: 'Varinia Salazar',
+    role: 'Peluquera',
+    imageUrl: varinia,
+    linkedinUrl: '',
+  },
+  {
+    name: 'Nubia Fuentes',
+    role: 'Asistente de día',
+    imageUrl: nubia,
+    linkedinUrl: '',
+  },
+  {
+    name: 'Catalina Torres',
+    role: 'Kinesióloga',
+    imageUrl: catalina,
     linkedinUrl: '',
   },
   {
     name: 'Jeannette Guajardo',
-    role: 'Pödología',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    role: 'Podología',
+    imageUrl: jeannett,
     linkedinUrl: '',
   },
   {
     name: 'Katherine Acuña',
     role: 'Fonoaudiología',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: katherine,
     linkedinUrl: '',
   },
 ]
