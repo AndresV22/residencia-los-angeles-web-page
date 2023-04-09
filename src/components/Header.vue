@@ -14,7 +14,7 @@
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a v-for="item in navigation" :key="item.name" :href="item.href" class="transition-all duration-500 cursor-pointer rounded-lg py-2 px-3 hover:bg-laYellow text-sm font-semibold leading-6 text-gray-900">{{ item.name }}</a>
+        <a v-for="item in navigation" :key="item.name" :href="item.href" class="transition-all duration-500 cursor-pointer rounded-lg py-2 px-3 hover:bg-laYellow text-sm font-semibold leading-6 text-black">{{ item.name }}</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       </div>
@@ -35,7 +35,7 @@
         <div class="mt-6 flow-root">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="space-y-2 py-6">
-              <a v-for="item in navigation" :key="item.name" :href="item.href" class="hover:rounded-xl transition-all duration-700 cursor-pointer -mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-laYellow">{{ item.name }}</a>
+              <a v-for="item in navigation" :key="item.name" :href="item.href" class="hover:rounded-xl transition-all duration-700 cursor-pointer -mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-black hover:bg-laYellow">{{ item.name }}</a>
             </div>
             <div class="py-6">
             </div>

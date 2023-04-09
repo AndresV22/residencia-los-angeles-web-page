@@ -88,7 +88,7 @@ const people = [
   },
   {
     name: 'Andrea Chávez',
-    role: 'Medico tratante',
+    role: 'Médico tratante',
     imageUrl: andrea,
     linkedinUrl: '',
   },
