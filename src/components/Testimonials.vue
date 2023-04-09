@@ -18,7 +18,7 @@
         </div>
         <figcaption class="text-base lg:col-start-1 lg:row-start-3">
           <div class="font-semibold text-gray-900">Fabiola</div>
-          <div class="mt-1 text-gray-500">75 años. Nuestra primera huésped.</div>
+          <div class="mt-1 text-gray-500">75 años. <br/> Nuestra primera huésped.</div>
         </figcaption>
       </figure>
     </div>

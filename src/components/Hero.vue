@@ -29,7 +29,7 @@
             <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                 <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Residencia Los Ángeles</h1>
-                <p class="relative mt-6 text-lg leading-8 text-laBlue sm:max-w-md lg:max-w-none">Residencia Los Ángeles es un hogar de ancianos que brinda cuidados integrales y personalizados para
+                <p class="relative mt-6 text-lg leading-8 text-laBlue sm:max-w-md lg:max-w-none">Residencia Los Ángeles es un hogar para adultos mayores que brinda cuidados integrales y personalizados para
 satisfacer las necesidades de nuestros abuelitos. Contamos con un equipo de profesionales altamente
 capacitados junto con talleres recreativos y deliciosas comidas. En Residencia Los Ángeles, nos enorgullece
 brindar un ambiente cálido y acogedor, donde nuestros abuelitos se sientan como en casa y reciban los cuidados
