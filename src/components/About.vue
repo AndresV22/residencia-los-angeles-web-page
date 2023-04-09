@@ -55,8 +55,8 @@
 <script setup>
 const stats = [
   { label: 'Fundado el', value: '2023' },
-  { label: 'Empleados', value: '8' },
-  { label: 'Residentes', value: '2' },
-  { label: 'Cupos', value: '9' },
+  { label: 'Empleados', value: '9' },
+  { label: 'Residentes', value: '3' },
+  { label: 'Cupos restantes', value: '8' },
 ]
 </script>
