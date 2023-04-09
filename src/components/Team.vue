@@ -35,6 +35,7 @@ import vale from '@/assets/vale.jpeg'
 import paulina from '@/assets/paulina.jpeg'
 import jeannett from '@/assets/jeannette.jpeg'
 import katherine from '@/assets/katherine.jpeg'
+import andrea from '@/assets/andrea.jpg'
 
 const people = [
   {
@@ -83,6 +84,12 @@ const people = [
     name: 'Katherine Acuña',
     role: 'Fonoaudiología',
     imageUrl: katherine,
+    linkedinUrl: '',
+  },
+  {
+    name: 'Andrea Chávez',
+    role: 'Medico tratante',
+    imageUrl: andrea,
     linkedinUrl: '',
   },
 ]
