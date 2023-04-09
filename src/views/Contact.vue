@@ -30,7 +30,7 @@
                         <span class="sr-only">Dirección</span>
                         <BuildingOffice2Icon class="h-7 w-6 text-gray-400" aria-hidden="true" />
                     </dt>
-                    <dd><a href="https://goo.gl/maps/Skp65boVSCB26GrBA">Avenida Carrascal 5681 <br />Quinta Normal</a></dd>
+                    <dd><a class="hover:text-gray-900" href="https://goo.gl/maps/Skp65boVSCB26GrBA">Avenida Carrascal 5681 <br />Quinta Normal</a></dd>
                     </div>
                     <div class="flex gap-x-4">
                     <dt class="flex-none">
