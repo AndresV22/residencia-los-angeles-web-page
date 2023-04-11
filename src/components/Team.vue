@@ -48,7 +48,7 @@ const people = [
     name: 'Valeria Zúñiga',
     role: 'Talleres recreativos',
     imageUrl: vale,
-    linkedinUrl: '',
+    linkedinUrl: 'https://www.linkedin.com/in/valeria-zu%C3%B1iga-65040a250/',
   },
   {
     name: 'Paulina Villalobos',
